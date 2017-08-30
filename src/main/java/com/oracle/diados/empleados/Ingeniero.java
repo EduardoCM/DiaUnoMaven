@@ -2,8 +2,8 @@ package com.oracle.diados.empleados;
 
 public class Ingeniero extends Empleado {
     
-    public Ingeniero(String nombre, int numeroEmpleado, double salary) {
-        super(nombre, numeroEmpleado, salary);
+    public Ingeniero(String nombre, double salary) {
+        super(nombre,  salary);
     }
 
     @Override

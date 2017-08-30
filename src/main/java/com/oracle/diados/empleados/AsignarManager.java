@@ -1,19 +1,33 @@
 package com.oracle.diados.empleados;
 
 import static com.oracle.diados.empleados.UtileriasEmpleado.getBono;
+import static java.lang.System.out;
 
 public class AsignarManager {
     
     public static void main(String[] args) {
         
-        Manager manager = new Manager("Gerardo", 32, 10_000, "Arquitectura");
+      Empleado manager = new Manager("Gerardo", 10_000, "Arquitectura");
+       out.println(manager.getNumeroEmpleado());
+        
        
-        Ingeniero inge = new Ingeniero("Saul", 45, 10_000);
+      Empleado inge = new Ingeniero("Saul", 10_000);
+        out.println(inge.getNumeroEmpleado());
         
         
-        System.out.println(getBono(inge));
+      Empleado manager2 = new Manager("Bety", 50_000, "Scrum"); 
+        out.println(manager2.getNumeroEmpleado());
         
-        System.out.println(getBono(manager));
+        
+        Empleado.resetearNumeroEmpleado();
+        
+      Empleado manager3 = new Manager("Bety", 50_000, "Scrum"); 
+      out.println(manager3.getNumeroEmpleado());
+      
+        Empleado manager4 = new Manager("Bety", 50_000, "Scrum"); 
+        out.println(manager4.getNumeroEmpleado());
+      
+        
         
         
     }
