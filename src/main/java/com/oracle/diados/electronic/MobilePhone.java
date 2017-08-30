@@ -3,8 +3,9 @@ package com.oracle.diados.electronic;
 
 public class MobilePhone extends ElectronicDevice {
     
+    
     public MobilePhone(String name){
-        super(name);
+        super("nombre");
     }
 
     @Override
